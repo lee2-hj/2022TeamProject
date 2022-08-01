@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="메인style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel="stylesheet" href="게시판.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+/>
+</head>
+
+<body>
+    <div class="container">
+
+        <nav>
+            <!-- header -->
+            <div class="header">
+                <h1><a href="J:\이희장\연습\팀 프로젝트\02_index.html">인천 맛집 지도</a></h1>
+                <div class="navbar">
+                    <ul>
+                        <li><a href="J:\이희장\연습\팀 프로젝트\로그인.html">LOG IN</a></li>
+                        <li><a href="J:\이희장\연습\팀 프로젝트\SignUp.html">JOIN</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- 메인 이미지 -->
+        <div class="mainImg">
+            
+            <img src="/teamproject/mainimage/한식1.jfif" alt="">
+        </div>
+        </header>
+        <form action="">
+            
+        <main>
+            
+        <!-- 글 목록 리스트-->
+        <div class="list">
+            <a href="#" id="click" onclick="countv()">
+                <img src="J:\이희장\연습\팀 프로젝트\menuimage\김치찌개.jpg" alt="" id="view">
+                <div class="store">
+                    <h5 id="storeName">매장정보</h5>
+                </div>
+            </a>
+            <ul>
+                <li id="viewCount">0</li>
+                <li id="writer">작성자</li>
+                <li id="writeDate">날짜</li>
+            </ul>
+            
+        </div>
+        <div class="list">
+            <a href="#" id="click">
+                <img src="J:\이희장\연습\팀 프로젝트\menuimage\계란말이.jpg" alt="">
+                <div class="store">
+                    <h5 id="storeName">매장정보</h5>
+                </div>
+            </a>
+            <ul>
+                <li id="viewCount">0</li>
+                <li id="writer">작성자</li>
+                <li id="writeDate">날짜</li>
+            </ul>
+            
+        </div>
+        <div class="list">
+            <a href="#" id="click">
+                <img src="J:\이희장\연습\팀 프로젝트\menuimage\불고기.jpg" alt="">
+                <div class="store">
+                    <h5 id="storeName">매장정보</h5>
+                </div>
+            </a>
+            <ul>
+                <li id="viewCount">0</li>
+                <li id="writer">작성자</li>
+                <li id="writeDate">날짜</li>
+            </ul>
+            
+        </div>
+        <div class="list">
+            <a href="#" id="click" >
+                <img src="J:\이희장\연습\팀 프로젝트\menuimage\뼈해장국.jpg" alt="">
+                <div class="store">
+                    <h5 id="storeName">매장정보</h5>
+                </div>
+            </a>
+            <ul>
+                <li id='viewCount'>0</li>
+                <li id="writer">작성자</li>
+                <li id="writeDate">날짜</li>
+            </ul>
+            
+        </div>
+        
+    </main>
+    <!-- 검색창 -->
+    <div class="box">
+        
+        <div class="searchBox">   
+            <input type="text" id="search">
+            <button type="button" onclick="searchBtn()">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+            
+            <a href="#">
+                <i class="fa-solid fa-pen"></i>
+            </a>
+            
+            
+        </div>
+    </div>
+    <!-- footer -->
+    <div class="footer">
+        <i class="fa fa-facebook-square"></i>
+        <i class="fa fa-instagram"></i>
+        <a href="#">자주하는 질문</a>
+    </div>
+</form>
+</body>
+</div>
+<script>
+    let count=0;
+    function countv(){
+        count++;
+        console.log(count);
+        document.getElementById('viewCount').innerHTML=count;
+    }
+    
+    
+    
+   
+</script>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>작성</title>
+    <link rel="stylesheet" href="write.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header"><h1>인천맛집지도</h1></div>
+        <div class="title"><h2>나의 맛 평가</h2></div>
+        <div class="main">
+          <div class="writer" id="writer">
+            <label for="" id="la_name">작성자</label><input type="text" id="name" readonly>
+          </div> 
+          <div class="title" id="title"> 
+            <label for="" id="la_head">제목</label><input type="text" id="head">
+          </div>
+          <div id="imgarea">
+            <img src="" id="img">
+          </div>
+          <div class="write" id="write">
+            <textarea id="" cols="50" rows="10" id="area"></textarea>
+          </div>
+          <div class="upload">
+            <input type="file" id="up_load" class="up_load" accept="img/*" required multiple>
+          </div>
+          <!-- <div class="up_btn">
+           <button type="button" class="btn_up" id="btn_up">사진선택</button>
+          </div> -->
+        </div>
+        <div id="load_btn">
+            <button type="button"><a href="#">작성하기</a></button>
+            <button type="button"><a href="#">작성취소</a></button>
+
+        </div>
+    </div>
+    <div class="footer">
+        
+    </div>
+    <script>
+        const fileInput = document.getElementById('up_load');
+        const handleFiles = (e) => {
+            const seletedFile = [...f=fileInput.files];
+            const fileReader = new FileReader();
+            fileReader.readAsDataURL(seletedFile[0]);
+            fileReader.onload = function(){
+                document.getElementById('img').src = fileReader.result;
+            };
+        };
+        fileInput.addEventListener('change',handleFiles);
+    </script>
+    
+</body>
+</html>

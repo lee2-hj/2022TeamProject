@@ -1,0 +1,69 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: initial;
+}
+.findPw{
+    width: 400px;
+    height: 430px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    border: 1px solid gainsboro;
+    border-radius: 20px;
+}
+.findPw h2{
+    color: #464646  ;
+    font-size: 20px;
+    margin: 20px;
+    font-weight: bold;
+}
+.findPw .findPwBox{
+    position: relative;
+    display: block;
+}
+.findPw .findPwBox input{
+    width: 300px;
+    height: 30px;
+    margin-bottom: 20px;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid gainsboro;
+}
+.btn{
+    width: 300px;
+    height: 50px;
+    margin-top: 10px;
+    font-size: 15px;
+    color: #464646;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: #FFC300;
+    border-radius: 5px;
+}
+.pwBottom p{
+    display: inline-block;
+    padding: 50px;
+    font-size: 12px;
+}
+.pwBottom p a{
+    text-decoration: none;
+    color: gray;
+}
+#id_check{
+    color: red;
+    font-size: 0.75rem;
+}
+#name_check{
+    color: red;
+    font-size: 0.75rem;
+}
+#email_check{
+    color: red;
+    font-size: 0.75rem;
+}

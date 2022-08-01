@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="로그인style.css">
+
+</head>
+<body>
+    <div class="login">
+        <form action="">
+            <h1>Login</h1>
+            <div class="loginBox">
+                <input type="text" name="id" id="id" placeholder="아이디" onkeyup="eng()">
+            </div>
+            <div class="loginBox">
+                <input type="password" name="pass" id="pass" placeholder="비밀번호">
+            </div>
+            <div class="loginBox">
+                <button type="button" class="btn" onclick="logcheck()">로그인</button>
+            </div>
+            <div class="loginBoxBottom">
+                <p><a href="비밀번호찾기.html">비밀번호 찾기</a></p>        
+                <p><a href="아이디찾기.html">아이디 찾기</a></p>                
+                <p><a href="J:\이희장\연습\팀 프로젝트\SignUp.html">회원가입</a></p>        
+            </div>
+        </form>
+    </div>
+</form>
+<script>
+    function logcheck(){
+        let id = document.getElementById('id').value;
+        let pass =document.getElementById('pass').value;
+        if(id==='' || pass ===''){
+            alert('아이디 혹은 비밀번호가 잘못되었습니다.');
+        }else{
+            location.replace('J:/이희장/연습/팀 프로젝트/02_Index.html');
+        }
+
+    }
+    function eng(){
+        const eng = /[^0-9a-zA-Z]/g;
+    const ele = event.target;
+    if(eng.test(ele.value)){
+        ele.value = ele.value.replace(eng,'');
+        document.getElementById('idError').innerHTML='*영문 숫자만 입력가능합니다.'
+    }
+    }
+
+</script>
+   
+</body>
+</html>

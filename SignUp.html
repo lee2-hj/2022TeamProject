@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    <link rel="stylesheet" href="Sign_Up.css">
+    <script src="SignUp.js"></script>
+</head>
+<body>
+    <div class="header"></div>
+    <form action="">
+    <div class="container">
+        <div class="title"> <h1>회원가입</h1></div>
+        <div class="name">
+            <input type="text" id="name" placeholder="이름">
+            <div id="nameError" class="error"></div>
+        </div>
+        <div class="id">
+            <input type="text" id="uid" class="uid" placeholder="아이디" onkeyup="eng(event)">
+            <div id="idError" class="error"></div>
+        </div>
+        <div class="password">
+            <input type="password" id="password" placeholder="비밀번호">
+            <div id="passError" class="error"></div>
+        </div>
+        <div class="passcheck">
+            <input type="password" id="passcheck" placeholder="비밀번호 확인">
+            <div id="pacheckError" class="error"></div>
+        </div>
+        <div class="email">
+            <input type="text" id="email" placeholder="이메일 예)aaaa@aaaa.com">
+            <div id="emailError" class="error"></div>
+        </div>
+        <div class="sub">
+            <button id="submit" type="button"  onclick="check()">가입하기</button>
+        </div>
+
+    </div>
+    </form>
+    <div class="footer"></div>
+</body>
+</html>
